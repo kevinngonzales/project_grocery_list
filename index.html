@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <!-- Create a header for your Grocery List
+Create a <div> with an id of “groceryList”.
+This is where your JavaScript will add items to list
+Below that <div> , create another <div> with an id of “totals”.
+Here your costs and quantities will be added and displayed
+(Inside) create two <p> ’s
+(Inside) Add a <span> in each <p> . The first should have an id of “totalCost”.
+The second should have an id of “totalQuantity”
+Below both <div> ’s, create six <button> ’s, each with an onclick in this order -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <h1>Grocery List</h1>
+
+  <body>
+    <div id="groceryList"></div>
+
+    <div id="totals">
+      <button onclick="addItemPrompt()">Add Item</button>
+      <button onclick="isolateCategory('Fruits')">Fruits</button>
+      <button onclick="isolateCategory('Vegetables')">Vegetables</button>
+      <button onclick="isolateCategory('Dairy')">Dairy</button>
+      <button onclick="showAllCategories()">All Categories</button>
+      <button onclick="orderItemsByCost()">Order By Cost</button>
+
+      <p><span id="totalCost"> </span></p>
+      <p><span id="totalQuantity"> </span></p>
+    </div>
+  </body>
+</html>
